@@ -1,0 +1,44 @@
+[
+ {
+  "slug": "serpapi",
+  "name": "SerpApi",
+  "description": "SerpApi is a real-time API for structured search engine results.",
+  "category": "Data & Analytics",
+  "tools": 48
+ },
+ {
+  "slug": "firecrawl",
+  "name": "Firecrawl",
+  "description": "Firecrawl automates large-scale web crawling and data extraction.",
+  "category": "Data & Analytics",
+  "tools": 29
+ },
+ {
+  "slug": "tavily",
+  "name": "Tavily",
+  "description": "Tavily offers powerful search and data retrieval from documents, databases, and the web.",
+  "category": "Data & Analytics",
+  "tools": 5
+ },
+ {
+  "slug": "exa",
+  "name": "Exa",
+  "description": "Exa is a data extraction and search platform for gathering and analyzing information from websites, APIs, or databases.",
+  "category": "Data & Analytics",
+  "tools": 18
+ },
+ {
+  "slug": "elevenlabs",
+  "name": "ElevenLabs",
+  "description": "Elevenlabs is an advanced AI voice generation platform for lifelike, multilingual speech synthesis.",
+  "category": "Media",
+  "tools": 155
+ },
+ {
+  "slug": "peopledatalabs",
+  "name": "People Data Labs",
+  "description": "Peopledatalabs delivers B2B data enrichment and identity resolution APIs.",
+  "category": "Data & Analytics",
+  "tools": 24
+ }
+]

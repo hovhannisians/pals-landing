@@ -1,0 +1,66 @@
+[
+ {
+  "slug": "gmail",
+  "name": "Gmail",
+  "description": "Gmail is Google's email service with powerful spam protection, search, and G Suite integration.",
+  "category": "Communication",
+  "tools": 61,
+  "triggers": 2
+ },
+ {
+  "slug": "googlecalendar",
+  "name": "Google Calendar",
+  "description": "Google Calendar is a time management service for scheduling meetings, events, and reminders.",
+  "category": "Scheduling",
+  "tools": 44,
+  "triggers": 7
+ },
+ {
+  "slug": "googledrive",
+  "name": "Google Drive",
+  "description": "Google Drive is a cloud storage platform for uploading, sharing, and collaborating on files.",
+  "category": "Content & Files",
+  "tools": 76,
+  "triggers": 7
+ },
+ {
+  "slug": "outlook",
+  "name": "Outlook",
+  "description": "Outlook is Microsoft's email and calendaring platform for unified communications and scheduling.",
+  "category": "Communication",
+  "tools": 282,
+  "triggers": 5
+ },
+ {
+  "slug": "twitter",
+  "name": "Twitter",
+  "description": "Twitter is a social media platform for sharing real-time updates, conversations, and news.",
+  "category": "Marketing",
+  "tools": 78,
+  "triggers": 0
+ },
+ {
+  "slug": "googlesheets",
+  "name": "Google Sheets",
+  "description": "Google Sheets is a cloud-based spreadsheet tool for real-time collaboration and data analysis.",
+  "category": "Productivity & Projects",
+  "tools": 42,
+  "triggers": 16
+ },
+ {
+  "slug": "supabase",
+  "name": "Supabase",
+  "description": "Supabase is an open-source backend platform offering scalable Postgres databases, authentication, storage, and real-time APIs.",
+  "category": "Developer Tools",
+  "tools": 116,
+  "triggers": 0
+ },
+ {
+  "slug": "notion",
+  "name": "Notion",
+  "description": "Notion is a collaborative workspace for notes, docs, wikis, and tasks.",
+  "category": "Productivity & Projects",
+  "tools": 45,
+  "triggers": 13
+ }
+]
