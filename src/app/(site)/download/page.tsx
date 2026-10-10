@@ -41,7 +41,7 @@ export default function DownloadPage() {
               q: "What do I need to get started?",
               a: (
                 <>
-                  A Robi API key for the desktop apps, or a Robi account. See <Link href="/docs/quickstart">Get started</Link>.
+                  A Robi API key for the desktop apps, or a Robi account.
                 </>
               ),
             },
@@ -49,7 +49,7 @@ export default function DownloadPage() {
               q: "Can I build it myself?",
               a: (
                 <>
-                  Yes. See <Link href="/docs/self-hosting">Run it yourself</Link>.
+                  Yes, you can run it yourself.
                 </>
               ),
             },

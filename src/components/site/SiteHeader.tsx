@@ -14,11 +14,15 @@ export default function SiteHeader() {
   const path = usePathname();
   const [sheet, setSheet] = useState(false);
   const [mega, setMega] = useState(false);
+  const [mobileFeatures, setMobileFeatures] = useState(false);
+  const [mobileApps, setMobileApps] = useState(false);
   const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     setSheet(false);
     setMega(false);
+    setMobileFeatures(false);
+    setMobileApps(false);
   }, [path]);
   useEffect(() => {
     if (!mega) return;
@@ -128,19 +132,37 @@ export default function SiteHeader() {
 
       {sheet && (
         <nav id="site-menu" className="nav-sheet" aria-label="Main">
-          <div className="eyebrow">Features</div>
-          {FEATURE_MENU.map((f) => (
-            <Link key={f.href} href={f.href}>
-              {f.title}
-            </Link>
-          ))}
-          <Link href="/features">All features</Link>
-          <div className="eyebrow">Get Pals on</div>
-          {APPS_MENU.map((a) => (
-            <Link key={a.href} href={a.href}>
-              {a.label}
-            </Link>
-          ))}
+          <button type="button" className="nav-sheet-toggle" aria-expanded={mobileFeatures} onClick={() => setMobileFeatures((open) => !open)}>
+            Features
+            <svg viewBox="0 0 12 12" width="12" height="12" aria-hidden>
+              <path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          {mobileFeatures && (
+            <div className="nav-sheet-submenu">
+              {FEATURE_MENU.map((f) => (
+                <Link key={f.href} href={f.href}>
+                  {f.title}
+                </Link>
+              ))}
+              <Link href="/features">All features</Link>
+            </div>
+          )}
+          <button type="button" className="nav-sheet-toggle" aria-expanded={mobileApps} onClick={() => setMobileApps((open) => !open)}>
+            Get Pals on
+            <svg viewBox="0 0 12 12" width="12" height="12" aria-hidden>
+              <path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </button>
+          {mobileApps && (
+            <div className="nav-sheet-submenu">
+              {APPS_MENU.map((a) => (
+                <Link key={a.href} href={a.href}>
+                  {a.label}
+                </Link>
+              ))}
+            </div>
+          )}
           <div className="eyebrow">More</div>
           {[...NAV.filter((n) => n.href !== "/blog"), ...COMPANY_MENU].map((n) => (
             <Link key={n.href} href={n.href} aria-current={here(n.href) ? "page" : undefined}>

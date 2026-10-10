@@ -36,7 +36,6 @@ export default function FeaturesPage() {
             "A small model checks each risky action against them. The strictest rule wins.",
             "Choose Always allow on a card and it won't ask about that again.",
           ]}
-          more={{ href: "/docs/rules", label: "How rules work" }}
         >
           <RuleEditor />
         </Story>
@@ -52,7 +51,6 @@ export default function FeaturesPage() {
             "Nobody can read a password back out of Pals, including you.",
             "For codes from your phone, the pal asks you to take over.",
           ]}
-          more={{ href: "/docs/passwords", label: "About saved passwords" }}
         >
           <SavedLogins />
         </Story>
@@ -75,7 +73,6 @@ export default function FeaturesPage() {
           title="On a schedule, or on a signal."
           body="Ask for a brief every weekday at 8 and the pal sets up a routine. Add a trigger and it wakes up when something happens in your apps, like an email from your bank."
           points={["Each run posts to the pal's chat and sends you a notification.", "Routines use plain cron schedules, with presets for the usual ones.", "Runs still follow your rules."]}
-          more={{ href: "/docs/routines", label: "About routines and triggers" }}
         >
           <RoutineEditor />
         </Story>
@@ -86,7 +83,6 @@ export default function FeaturesPage() {
           title="A team, not one assistant."
           body="Make a few pals with different jobs. They pass work to each other, and in a channel you can talk to several at once while a lead pal hands out the work."
           points={["Scout researches, Juniper writes the email, you approve it.", "Channels hold up to 20 pals.", "Hand-offs stop after two steps, so work never bounces around."]}
-          more={{ href: "/docs/channels", label: "About channels and hand-offs" }}
         >
           <ChannelChat />
         </Story>
@@ -98,7 +94,6 @@ export default function FeaturesPage() {
           title="It remembers you."
           body="Mention something once and it sticks. Pals keep notes about you and how you like things done, and save step-by-step skills for the tasks they repeat."
           points={["See and edit everything it knows in its Setup tab.", "Ask it to forget something and it does.", "Skills make repeat jobs faster and more reliable."]}
-          more={{ href: "/docs/memory", label: "About memory and skills" }}
         >
           <SkillDoc />
         </Story>

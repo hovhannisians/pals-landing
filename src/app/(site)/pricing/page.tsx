@@ -197,7 +197,7 @@ export default function PricingPage() {
                 q: "Where can I read more?",
                 a: (
                   <>
-                    See <Link href="/docs/plans">Plans and limits</Link> in the docs.
+                    Plans and limits will be available soon.
                   </>
                 ),
               },

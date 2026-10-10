@@ -42,15 +42,6 @@ const COLUMNS: { title: string; links: [string, string][] }[] = [
       ["Blog", "/blog"],
     ],
   },
-  {
-    title: "Learn",
-    links: [
-      ["Docs", "/docs"],
-      ["Get started", "/docs/quickstart"],
-      ["Your data", "/docs/privacy"],
-      ["API", "/docs/api"],
-    ],
-  },
 ];
 
 export default function SiteFooter() {

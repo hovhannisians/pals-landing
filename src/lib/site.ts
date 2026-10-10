@@ -75,6 +75,8 @@ export const PLATFORMS: Platform[] = ["mac", "windows", "ios", "android", "robic
 export const ROBI_URL = "https://robiai.com";
 /** Product release gate. Only the literal value "true" enables download and login links. */
 export const PALS_LAUNCHED = process.env.NEXT_PUBLIC_PALS_LAUNCHED === "true";
+/** Documentation is temporarily hidden until the public docs are ready. */
+export const PALS_DOCS_ENABLED = process.env.NEXT_PUBLIC_PALS_DOCS_ENABLED === "true";
 export const WAITLIST_URL = "/waitlist";
 /** Public Google Apps Script web app used by the Robi Labs Pals waitlist. */
 export const WAITLIST_ENDPOINT = "https://script.google.com/macros/s/AKfycbyDCssCa1huQnC43-OIn80cBMFB8f0UfKP7Vv-XpcR1n894ftPVVlp7W-jHvatTkQJg/exec";
@@ -116,7 +118,6 @@ export const NAV = [
   { href: "/integrations", label: "Integrations" },
   { href: "/pricing", label: "Pricing" },
   { href: "/blog", label: "Blog" },
-  { href: "/docs", label: "Docs" },
 ];
 
 /** The Features menu: what a pal can do, and where to get it. */

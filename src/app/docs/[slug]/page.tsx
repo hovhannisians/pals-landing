@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import DocPage from "@/components/docs/DocPage";
 import { PAGES, findPage } from "@/lib/docs";
+import { PALS_DOCS_ENABLED } from "@/lib/site";
 
 export const dynamicParams = false;
 
@@ -15,6 +16,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 }
 
 export default async function Doc({ params }: { params: Promise<{ slug: string }> }) {
+  if (!PALS_DOCS_ENABLED) notFound();
   const { slug } = await params;
   if (!findPage(slug)) notFound();
   return <DocPage slug={slug} />;

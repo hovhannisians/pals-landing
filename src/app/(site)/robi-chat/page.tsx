@@ -37,9 +37,6 @@ export default function RobiChatPage() {
         actions={
           <>
             <AppButton platform="robichat" direct />
-            <Link href="/docs/robichat" className="btn btn-secondary btn-lg">
-              How it works
-            </Link>
           </>
         }
       >
@@ -107,7 +104,7 @@ export default function RobiChatPage() {
               q: "How does Robi Chat talk to Pals?",
               a: (
                 <>
-                  Through the Pals API, as you, with short-lived tokens. See <Link href="/docs/api">the API</Link>.
+                  Through the Pals API, as you, with short-lived tokens.
                 </>
               ),
             },

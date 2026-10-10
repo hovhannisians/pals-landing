@@ -33,9 +33,6 @@ export default function IntegrationsPage() {
             <Link href="/download" className="btn btn-primary btn-lg">
               Get Pals
             </Link>
-            <Link href="/docs/apps" className="btn btn-secondary btn-lg">
-              How connecting works
-            </Link>
           </>
         }
       >

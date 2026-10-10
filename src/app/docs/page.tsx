@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
 import DocPage from "@/components/docs/DocPage";
+import { PALS_DOCS_ENABLED } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Docs",
@@ -7,5 +9,6 @@ export const metadata: Metadata = {
 };
 
 export default function DocsHome() {
+  if (!PALS_DOCS_ENABLED) notFound();
   return <DocPage slug="" />;
 }

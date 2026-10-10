@@ -124,7 +124,7 @@ export default function DesktopPage() {
               q: "Can I run it from source?",
               a: (
                 <>
-                  Yes. See <Link href="/docs/self-hosting">Run it yourself</Link> in the docs.
+                  Yes. You can run it yourself.
                 </>
               ),
             },

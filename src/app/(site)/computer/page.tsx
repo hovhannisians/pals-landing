@@ -23,9 +23,6 @@ export default function ComputerPage() {
             <Link href="/download" className="btn btn-primary btn-lg">
               Get Pals
             </Link>
-            <Link href="/docs/computer" className="btn btn-secondary btn-lg">
-              Read the docs
-            </Link>
           </>
         }
       >
@@ -95,7 +92,6 @@ export default function ComputerPage() {
           title="A place to write and run code."
           body="Each pal has a workspace that lasts between chats. It installs the packages it needs, runs scripts, and sends you what it made: reports, charts, exports."
           points={["Images you send go to the model; other files land in its workspace.", "Download anything from the Files panel.", "It all happens on its cloud computer, not on yours."]}
-          more={{ href: "/docs/files", label: "About files and code" }}
         >
           <Terminal />
         </Story>
@@ -105,7 +101,6 @@ export default function ComputerPage() {
           title="On the desktop app, yours too, if you allow it."
           body="Some jobs live on your own machine, like a video on your Desktop. In the Mac and Windows apps you can give a pal access to your computer, and it asks before every command it runs there."
           points={["Off until you turn it on, for each pal.", "Every command needs your approval by default.", "Turn the access off again at any time."]}
-          more={{ href: "/docs/computer", label: "About access to your computer" }}
         >
           <LocalApproval />
         </Story>

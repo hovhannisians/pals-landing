@@ -28,7 +28,6 @@ export default function SecurityPage() {
             "When rules disagree, the strictest one wins.",
             "If the checker can't be reached, the pal asks you.",
           ]}
-          more={{ href: "/docs/rules", label: "How rules work" }}
         >
           <RulesCard
             rules={[
@@ -46,7 +45,6 @@ export default function SecurityPage() {
           label="Passwords"
           title="The model never sees your passwords."
           body="Saved passwords are typed straight into the page by Pals itself. They never go to the model and never appear in a chat, and nobody can read one back out."
-          more={{ href: "/docs/passwords", label: "About saved passwords" }}
         >
           <SavedLogins />
         </Story>
@@ -89,7 +87,7 @@ export default function SecurityPage() {
           ]}
         />
         <p className="plans-fine">
-          The full details are in <Link href="/docs/privacy">Your data</Link>.
+          Your data stays protected by default, with approvals for sensitive actions.
         </p>
       </section>
 
